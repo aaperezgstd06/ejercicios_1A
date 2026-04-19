@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-// Limpia el buffer de entrada después de una lectura fallida
+// Limpia el buffer de entrada despuÃ©s de una lectura fallida
 void limpiarBuffer() {
     cin.clear();
-    // Limpiar hasta encontrar un salto de línea
+    // Limpiar hasta encontrar un salto de lÃ­nea
     while(cin.get() != '\n') {
         continue;
     }
@@ -13,7 +13,7 @@ void limpiarBuffer() {
 // Lee un entero validando la entrada
 bool leerEntero(int &numero) {
     if (cin >> numero) {
-        limpiarBuffer();  // Limpia cualquier carácter adicional
+        limpiarBuffer();  // Limpia cualquier carÃ¡cter adicional
         return true;
     }
     limpiarBuffer();
@@ -27,12 +27,12 @@ void invertirArreglo(int arr[], int tam, int arrInvertido[]) {
     }
 }
 
-// Calcula la suma de elementos divisibles por un número dado
+// Calcula la suma de elementos divisibles por un nÃºmero dado
 int sumaDivisibles(int arr[], int tam, int divisor) {
     int suma = 0;
     
     if (divisor == 0) {
-        return -1;  // Código de error para división por cero
+        return -1;  // CÃ³digo de error para divisiÃ³n por cero
     }
     
     for (int i = 0; i < tam; i++) {
@@ -64,7 +64,7 @@ int main() {
     
     cout << "=== SISTEMA DE GESTION DE ARREGLOS NUMERICOS ===" << endl << endl;
     
-    // Solicitar y validar tamaño del arreglo
+    // Solicitar y validar tamaÃ±o del arreglo
     do {
         cout << "Ingrese la cantidad de elementos: ";
         if (leerEntero(tam) && tam > 0) {
